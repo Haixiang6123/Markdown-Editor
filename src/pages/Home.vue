@@ -17,11 +17,13 @@
     import Editor from '../components/Editor';
     import Previewer from '../components/Previewer';
 
+    import assets from '../assets/js/plaintext';
+
     export default {
         name: "home",
         data() {
             return {
-                plaintext: '',
+                plaintext: assets.plaintext,
             }
         },
         methods: {

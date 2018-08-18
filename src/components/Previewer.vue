@@ -1,5 +1,5 @@
 <template>
-    <div class="previewer" v-html="markedText"></div>
+    <div class="previewer" v-html="markedText" v-highlight></div>
 </template>
 
 <script>
@@ -16,7 +16,7 @@
             markedText() {
                 return marked(this.plaintext);
             }
-        }
+        },
     }
 </script>
 
