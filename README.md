@@ -2,7 +2,7 @@
 A markdown editor based on Vue.js, highlight.js and markedJS. The code style is Atom-One-Dark. Enjoy your writing 😉.
 
 ## Screenshot
-![ScreenShot](./screenshot/screenshot.png)
+![ScreenShot](screenshot/home.png)
 
 ## Resources
 1. [Vue.js](https://cn.vuejs.org/)
