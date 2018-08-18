@@ -15,7 +15,8 @@
         name: "editor",
         props: ['plaintext'],
         data() {
-            return {}
+            return {
+            }
         },
         methods: {
             updatePlaintext(event) {

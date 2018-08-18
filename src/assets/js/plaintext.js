@@ -1,15 +1,14 @@
 export default {
     plaintext: `# 652. Factorization
-#Lintcode/组合与排列
+
+## Idea
+1. Similar to sum combination。
+2. Notes：
+	1. Only add and remove in iteration。
+	2. Starting from 2, and end with\`Math.sqrt(n)\`。
+	3. The end condition is n <= 1 and solution.size() > 1, because there could be 8 -> [8].
 ---
-# Idea
-1. 与 sum 类似。
-2. 注意：
-	1. 只有在可以整除的时候才 add 、递归、 remove。
-	2. 遍历从2开始到 \`Math.sqrt(n)\` 结束。
-	3. 结束的情况是n <= 1 且 solution.size() > 1，因为有可能存在 8 -> [8] 的情况。
----
-# Codes
+## Codes
 \`\`\`java
 public List<List<Integer>> getFactors(int n) {
     List<List<Integer>> results = new ArrayList<>();

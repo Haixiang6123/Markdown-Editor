@@ -1,3 +1,4 @@
 pre, code {
+    border-radius: 5px;
     overflow: auto;
 }

@@ -8,7 +8,10 @@
             <Previewer :plaintext="plaintext"/>
         </main>
         <footer>
-            Footer
+            <a href="https://github.com/Haixiang6123/Markdown-Editor" target="_blank">
+                <img class="github-img" src="../assets/img/github.png" alt="Github">
+            </a>
+            <p>Powered By Haixiang Yan</p>
         </footer>
     </div>
 </template>
@@ -24,6 +27,11 @@
         data() {
             return {
                 plaintext: assets.plaintext,
+                isHidden: true,
+                toggleEditorState: {
+                    checked: 'Show',
+                    unchecked: 'Hide'
+                }
             }
         },
         methods: {
@@ -40,8 +48,6 @@
 
 <style scoped>
     .home-page {
-        margin: 0 auto;
-        width: 80%;
         height: 100vh;
     }
 
@@ -53,11 +59,26 @@
     }
 
     main {
+        margin: 0 auto;
+        width: 80%;
         height: 80%;
     }
 
     footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 10%;
+        background: #727f80;
+    }
+
+    footer a, p {
+        margin: 0 3px;
+        color: white;
+    }
+
+    .github-img {
+        width: 30px;
     }
 
     .title {
