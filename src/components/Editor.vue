@@ -31,9 +31,11 @@
     }
 
     textarea {
+        padding: 10px;
         border-radius: 5px;
         height: 98%;
         width: 97%;
+        box-sizing: border-box;
         resize: none;
         outline: none;
     }

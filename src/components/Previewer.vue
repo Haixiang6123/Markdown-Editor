@@ -1,13 +1,5 @@
 <template>
-    <div class="previewer">
-        <textarea
-                id="editor"
-                :value="markedText"
-                disabled
-                cols="30"
-                rows="10">
-        </textarea>
-    </div>
+    <div class="previewer" v-html="markedText"></div>
 </template>
 
 <script>
@@ -30,14 +22,12 @@
 
 <style scoped>
     .previewer {
-        width: 100%;
-    }
-
-    textarea {
+        padding: 10px;
         border-radius: 5px;
         height: 98%;
         width: 97%;
+        overflow: auto;
+        box-sizing: border-box;
         border: 1px solid #7f8c8d;
-        resize: none;
     }
 </style>
