@@ -1,29 +1,45 @@
 <template>
-    <div>
-        <label for="editor">Editor</label>
-        <textarea v-model="plainText" id="editor" cols="30" rows="10"></textarea>
-        <p>{{ markedText }}</p>
+    <div class="editor">
+        <textarea
+                id="editor"
+                :value="plaintext"
+                @input="updatePlaintext"
+                cols="30"
+                rows="10">
+        </textarea>
     </div>
 </template>
 
 <script>
-    import marked from 'marked';
-
     export default {
         name: "editor",
+        props: ['plaintext'],
         data() {
-            return {
-                plainText: ''
-            }
+            return {}
         },
-        computed: {
-            markedText() {
-                return marked(this.plainText);
+        methods: {
+            updatePlaintext(event) {
+                this.$emit('update:plaintext', event.target.value);
             }
         }
     }
 </script>
 
 <style scoped>
+    .editor {
+        width: 100%;
+    }
 
+    textarea {
+        border-radius: 5px;
+        height: 98%;
+        width: 97%;
+        resize: none;
+        outline: none;
+    }
+
+    textarea:focus {
+        border: 1px solid #42b983;
+        box-shadow: 0 0 10px 1px rgba(66,185,131, 0.4);
+    }
 </style>
