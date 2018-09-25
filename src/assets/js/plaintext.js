@@ -2,9 +2,9 @@ export default {
     plaintext: `# 652. Factorization
 
 ## Idea
-1. Similar to sum combination。
-2. Notes：
-	1. Only add and remove in iteration。
+1. Similar to sum combination.
+2. Notes:
+	1. Only add and remove in iteration.
 	2. Starting from 2, and end with\`Math.sqrt(n)\`。
 	3. The end condition is n <= 1 and solution.size() > 1, because there could be 8 -> [8].
 ---
