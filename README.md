@@ -1,7 +1,13 @@
 # Markdown-Editor
 A markdown editor based on Vue.js, highlight.js and markedJS. The code style is Atom-One-Dark. Enjoy your writing 😉.
 
-## Screenshot
+## Demo
+
+### Demo
+
+[Try this to start markdowning](https://haixiang6123.github.io/markdown-editor/)
+
+### Screenshot
 ![ScreenShot](screenshot/home.png)
 
 ## How to run
